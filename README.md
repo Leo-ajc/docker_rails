@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The cool kids have been telling me to learn Docker for years. Finally I am diving in.
 
-Things you may want to cover:
+Gotchas:
 
-* Ruby version
+* Mac Docker Desktop packages Kubernetes v1.14.8. AWS Fargate only supports Kubernetes 1.14.9, making Amazon EKS Kubernetes fail.
+https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html
 
-* System dependencies
+Start with 
 
-* Configuration
+```docker-compose up```
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

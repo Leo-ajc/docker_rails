@@ -11,4 +11,12 @@ Start Docker with
 
 ```docker-compose up```
 
+To start Docker up with Pry user:
 
+```docker-compose run --service-ports web```
+https://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/
+
+
+To run tests
+
+```docker-compose run -e "RAILS_ENV=test" web rake test```

@@ -1,1 +1,6 @@
-Foo
+Baz
+<%= Rails.env %>
+<% Article.all.each do | art | %>
+  <%= art.inspect %>
+<% end %>
+
